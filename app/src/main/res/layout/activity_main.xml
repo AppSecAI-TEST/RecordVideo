@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_photo"
+    android:orientation="vertical"
+    tools:context="com.bydauto.recordvideo.MainActivity">
+
+    <SurfaceView
+        android:id="@+id/sv_recordVideo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y598" />
+
+    <FrameLayout
+        android:id="@+id/fl_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_menu"
+        android:layout_below="@+id/sv_recordVideo">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y248"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/simicircle"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y41"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_album" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y85"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_takephoto" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y114"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_rec_on" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y77"
+            android:layout_weight="1.3"
+            android:src="@mipmap/icon_mic_on" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/y24"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_setting" />
+    </LinearLayout>
+
+</RelativeLayout>
