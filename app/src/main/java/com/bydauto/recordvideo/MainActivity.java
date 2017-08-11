@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.GridView;
 
 public class MainActivity extends Activity {
+    private static final String TAG = "MainActivity";
 
     /**
      * 用于展示照片墙的GridView

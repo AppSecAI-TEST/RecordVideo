@@ -23,7 +23,7 @@ import java.util.Set;
  */
 
 public class GridViewAdapter extends ArrayAdapter<String> implements AbsListView.OnScrollListener {
-
+    private static final String TAG = "GridViewAdapter";
     /**
      * 记录所有正在下载或等待下载的任务。
      */
